@@ -9,7 +9,7 @@ on: # Define the event(s) that trigger this workflow
   workflow_dispatch: # Allows manual triggering
 jobs:
   my_job:
-    runs-on: ubuntu-latest # Specify the runner environment
+    runs-on: self-hosted # Specify the runner environment
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4 # Action to check out your code
